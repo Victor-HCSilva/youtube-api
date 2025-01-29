@@ -1,11 +1,11 @@
 {
     "name": "Red And Blue",
-    "short_name": "Cor no youtube",
+    "short_name": "background no youtube",
     "version": "1.0.0",
     "manifest_version": 3,
-    "description": "Extensão para cor no youtube",
+    "description": "Extensão para background no youtube",
     "action": {
-        "default_popup": "html_for_youtube.html"
+        "default_popup": "html_for_redAndBlue.html"
     },
     "content_scripts": [
         {

@@ -1,0 +1,186 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+*{
+    font-size:1rem;
+    font-family: "Rubik", sans-serif;
+
+}
+
+#div_colors_buttons{
+    display: block;
+    margin: auto;
+}
+#blue{
+    text-decoration:none;
+    color:black;
+    border:1px rgb(250,200, 0, 1.0) solid ;
+    border-radius:6px;
+    background: white;
+    
+}
+#blue:hover{
+    background: whitesmoke;
+    color:blue;
+}
+#red{
+    text-decoration:none;
+    color:black;
+    border:1px rgb(250,200, 0, 1.0) solid ;
+    border-radius:6px;
+    background: white;
+    
+}
+#red:hover{
+    background: whitesmoke;
+    color:red;
+}
+#padrao{
+    text-decoration:none;
+    color:black;
+    border:1px rgb(250,200, 0, 1.0) solid ;
+    border-radius:6px;
+    background: white;
+    
+}
+#padrao:hover{
+    background: whitesmoke;
+    color: rgb(250,200, 0, 1.0);
+}
+#rosa{
+    text-decoration:none;
+    color:black;
+    border:1px rgb(250,200, 0, 1.0) solid ;
+    border-radius:6px;
+    background: white;
+    
+}
+#rosa:hover{
+    background: whitesmoke;
+    color: pink;
+}
+#verde{
+    text-decoration:none;
+    color:black;
+    border:1px rgb(250,200, 0, 1.0) solid ;
+    border-radius:6px;
+    background: white;
+    
+}
+#verde:hover{
+    background: whitesmoke;
+    color: green;
+}
+
+
+#roxo{
+    text-decoration:none;
+    color:black;
+    border:1px rgb(250,200, 0, 1.0) solid ;
+    border-radius:6px;
+    background: white;
+    
+}
+#roxo:hover{
+    background: whitesmoke;
+    color: violet;
+}
+
+#sigaa{
+    text-decoration:none;
+    background: rgb(0,150,225,1.0);
+    border-radius:6px;
+    color: white;
+    
+    
+}
+#sigaa:hover{
+    transition:1s;
+    background: blue;
+    color:white;
+}
+a{
+    text-decoration:none;
+    color: white
+}
+#email{
+    text-decoration:none;
+    background: rgb(0,200,30,1.0);
+    border-radius:6px;
+    color: yellow;
+}
+#email:hover{
+    transition:1s;
+    background: rgb(0,100,225,1.0);
+   
+}
+#email_a:hover{
+    border: 0px solid black;
+}
+/*============================================================================================================================================================*/
+#chat{
+    text-decoration:none;
+    background: rgb(0,0,0,1.0);
+    border-radius:6px;
+    border: 0.5px solid olive;
+    color: white;
+    
+    font-family: 'Times New Roman'
+
+}
+#chat:hover{
+    transition:1s;
+    background: rgb(50,0,0,1.0);
+}
+
+#tradutor{
+    text-decoration:none;
+    background: rgb(0,0,150,1.0);
+    border-radius:6px;
+    border: 0.5px solid olive;
+    color: white;
+    
+    font-family: 'Cambria'
+
+}
+#tradutor:hover{
+    transition:1s;
+    background: rgb(0,150,250,1.0);
+}
+
+#lichess{
+    text-decoration:none;
+    background: rgb(0,0,0,1.0);
+    border-radius:6px;
+    border: 0.5px solid white;
+    color: white;
+    
+}
+
+#lichess:hover{       
+    transition:0.3s;
+    border: 1px solid rgb(0,250,0);
+
+}
+#AI_studio{
+    text-decoration:none;
+    background: rgb(0,0,150);
+    border-radius:6px;
+    color: white;
+}
+#AI_studio:hover{       
+    transition:0.3s;
+    background-color: rgb(0,0,250);
+}
+#github{
+    text-decoration:none;
+    background-color:rgb(70,0,70);
+    color: white;
+    border-radius: 6px;
+}
+#github:hover{
+    transition: 0.3s;
+    background-color:rgb(120,0,120);
+    
+}
+
+
