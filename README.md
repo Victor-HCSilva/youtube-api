@@ -1,4 +1,4 @@
-# API para navegador (Computador)
+# API para navegador Chrome (Computador)
 - Permite mudar a cor do Background do YouTube
 
 # Tecnologias usadas:
