@@ -1,5 +1,5 @@
 # API para navegador (Computador)
-- Permite mudar a cor d Background
+- Permite mudar a cor do Background do YouTube
 
 # Tecnologias usadas:
 
