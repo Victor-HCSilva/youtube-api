@@ -20,10 +20,11 @@
     git clone https://github.com/Victor-HCSilva/youtube-api.git
 ```
 - Serão baixados os arquivos deste repositório.
-- Depois é necessário habilitar as modo de desenvovldor nas extensões. Para isso faça:
+- Depois é necessário habilitar as modo de desenvolvedor nas extensões. Para isso faça:
     - Click no três pontinhos - > Extensões -> Gerenciar Extensões;
-    - Em cima no canto superior direito ative o modo de desenvolvedor;
-    - Click em carregar sem compactação. Selecione a pasta que você criou e habilite o uso.
+    - Ative o modo de desenvolvedor, em cima no canto superior direito;
+    - Click em "carregar sem compactação" no canto superior esquerdo. 
+    - Selecione a pasta que você criou e habilite o uso.
 
 
 
