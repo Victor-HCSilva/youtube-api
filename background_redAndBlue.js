@@ -59,7 +59,7 @@ position_red.insertAdjacentHTML('beforebegin',
 
     .link{
         background-color: rgb(0,100,200);
-        text-color:white;
+        color:white;
         font-size:1.5rem !important;
         text-decoration:none;
         padding:2px;
@@ -72,7 +72,7 @@ position_red.insertAdjacentHTML('beforebegin',
 
     .background{
         background-color: rgb(0,0,0);
-        text-color: red !important;/*Não é funciona assim*/
+        color: white;/*Não é funciona assim*/
         font-size:1.5rem !important;
         text-decoration:none;
         padding:2px;
@@ -80,7 +80,7 @@ position_red.insertAdjacentHTML('beforebegin',
     }
     .background:hover{
         transition:1s;
-        background-color:rgb(100,100,100);
+        background-color:rgb(0,100,200);
     }
 }
 
