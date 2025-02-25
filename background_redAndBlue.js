@@ -67,7 +67,7 @@ position_red.insertAdjacentHTML('beforebegin',
     }
     .link:hover{
         transition:1s;
-        background-color:darkred;
+        background-color: green;
     }
 
     .background{
@@ -93,6 +93,8 @@ position_red.insertAdjacentHTML('beforebegin',
 <a class='link' id="email_a" href="https://mail.google.com/mail/u/1/#inbox" target="_blank">Gmail</a>
 
 <a class='link'  id="link_chat" href="https://chatgpt.com/" target="_blank">Chat-GPT</a>
+
+<a class='link'  id="documentos" href="https://docs.google.com/document/u/0/" target="_blank">Doc. Google</a>
 
 <a class='link' title="Google_AI_Studio" href="https://aistudio.google.com/app/prompts/new_chat?pli=1" target="_blank">AI Studio</a>
 
