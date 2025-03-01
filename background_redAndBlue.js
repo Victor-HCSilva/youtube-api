@@ -88,13 +88,13 @@ position_red.insertAdjacentHTML('beforebegin',
 <div id='my_style'>
 <br>
 
-<a class='link' href="https://autenticacao.ufrn.br/sso-server/login?service=https%3A%2F%2Fsigaa.ufrn.br%2Fsigaa%2Flogin%2Fcas" target="_blank">SIGAA</a>
+<a class='link' id="sigaa" href="https://autenticacao.ufrn.br/sso-server/login?service=https%3A%2F%2Fsigaa.ufrn.br%2Fsigaa%2Flogin%2Fcas" target="_blank">SIGAA</a>
 
 <a class='link' id="email_a" href="https://mail.google.com/mail/u/1/#inbox" target="_blank">Gmail</a>
 
 <a class='link'  id="link_chat" href="https://chatgpt.com/" target="_blank">Chat-GPT</a>
 
-<a class='link'  id="documentos" href="https://docs.google.com/document/u/0/" target="_blank">Doc. Google</a>
+<a class='link'  id="documentos" href="https://docs.google.com/document/u/0/" target="_blank">Docs. Google</a>
 
 <a class='link' title="Google_AI_Studio" href="https://aistudio.google.com/app/prompts/new_chat?pli=1" target="_blank">AI Studio</a>
 
@@ -244,23 +244,20 @@ end.insertAdjacentHTML('beforebegin', `
     <button id="remove" onclick="
     (function() {
         // Ocultando os elementos individualmente
-        document.querySelector('#sigaa').style.display = 'none';
-        document.querySelector('#email').style.display = 'none';
-        document.querySelector('#email_a').style.display = 'none';
-        document.querySelector('#chat').style.display = 'none';
-        document.querySelector('#link_chat').style.display = 'none';
-        document.querySelector('#AI_studio').style.display = 'none';
-        document.querySelector('#tradutor').style.display = 'none';
-        document.querySelector('#link_tradutor').style.display = 'none';
-        document.querySelector('#lichess').style.display = 'none';
-        document.querySelector('#github').style.display = 'none';
-        document.querySelector('#Github').style.display = 'none';
         document.querySelector('#padrao').style.display = 'none';
         document.querySelector('#red').style.display = 'none';
         document.querySelector('#blue').style.display = 'none';
         document.querySelector('#rosa').style.display = 'none';
         document.querySelector('#verde').style.display = 'none';
         document.querySelector('#roxo').style.display = 'none';
+        document.querySelector('#sigaa').style.display = 'none';
+        document.querySelector('#email_a').style.display = 'none';
+        document.querySelector('#link_chat').style.display = 'none';
+        document.querySelector('#documentos').style.display = 'none';
+        document.querySelector('#Google_AI_Studio').style.display = 'none';
+        document.querySelector('#link_tradutor').style.display = 'none';
+        document.querySelector('#lichess').style.display = 'none';
+        document.querySelector('#Github').style.display = 'none';
 
         alert('Recarregue a pagina (F5) para que voltem a aparecer');
     })();
