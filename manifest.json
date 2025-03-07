@@ -1,11 +1,14 @@
 {
-    "name": "Red And Blue",
-    "short_name": "background no youtube",
+    "name": "Mudar Cores",
+    "short_name": "Cor",
     "version": "1.0.0",
     "manifest_version": 3,
-    "description": "Extensão para background no youtube",
+    "description": "Extensão para mudar o estilos no youtube",
     "action": {
         "default_popup": "html_for_redAndBlue.html"
+    },
+    "icons":{
+        "128":"icon/icon-128-full-black.png"
     },
     "content_scripts": [
         {
@@ -21,3 +24,5 @@
         "service_worker": "background_redAndBlue.js"
     }
 }
+
+

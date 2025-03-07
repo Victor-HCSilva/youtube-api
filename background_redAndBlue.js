@@ -22,9 +22,6 @@ logo_youtube.style.display = "None"//Retirando o logo do you tube, para substitu
 posicao_nome.style.display = "none"//Retirando a palavra "BR"
 imagem_temporaria.style.display = "none"//Retirando...
 
-
-
-
 posicao_nome.insertAdjacentHTML("afterend","<nome style='display: block; margin-top: 20px'>zVAZIO...</nome>")
 
 
@@ -114,7 +111,7 @@ position_red.insertAdjacentHTML('beforebegin',
 <button class='background' id="rosa">Rosa</button>
 <button class='background' id="verde">Verde</button>
 <button class='background' id="roxo">Roxo</button>
-
+<button class='background' id="hide"> Esconder </button>
 
 </div>
 `
