@@ -57,14 +57,14 @@ position_red.insertAdjacentHTML('beforebegin',
     .link{
         background-color: rgb(0,100,200);
         color:white;
-        font-size:1.5rem !important;
+        font-size:1.2rem !important;
         text-decoration:none;
         padding:2px;
         border-radius: 6px;
     }
     .link:hover{
         transition:1s;
-        background-color: green;
+        background-color: gold;
     }
 
     .background{
@@ -93,11 +93,11 @@ position_red.insertAdjacentHTML('beforebegin',
 
 <a class='link'  id="documentos" href="https://docs.google.com/document/u/0/" target="_blank">Docs. Google</a>
 
-<a class='link' title="Google_AI_Studio" href="https://aistudio.google.com/app/prompts/new_chat?pli=1" target="_blank">AI Studio</a>
+<a class='link'id="Google_AI_Studio"  title="Google_AI_Studio" href="https://aistudio.google.com/app/prompts/new_chat?pli=1" target="_blank">AI Studio</a>
 
 <a class='link' id="link_tradutor" href="https://www.google.com/search?q=tradutor&rlz=1C1VDKB_pt-ptBR1084BR1084&oq=tra&gs_lcrp=EgZjaHJvbWUqDAgBECMYJxiABBiKBTIGCAAQRRg5MgwIARAjGCcYgAQYigUyDggCEEUYJxg7GIAEGIoFMgYIAxBFGDwyBggEEEUYPDIGCAUQRRg8MgYIBhBFGDwyBggHEEUYPNIBCDQzOTRqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8" target="_blank">Google Tradutor</a>
 
-<a class='link' title="lichess" href="https://lichess.org/" target="_blank">Lichess</a>
+<a class='link' id= "lichess" title="lichess" href="https://lichess.org/" target="_blank">Lichess</a>
 
 <a class='link' id="Github" href="https://github.com/dashboard" target="_blank">Github</a>
 
@@ -111,7 +111,6 @@ position_red.insertAdjacentHTML('beforebegin',
 <button class='background' id="rosa">Rosa</button>
 <button class='background' id="verde">Verde</button>
 <button class='background' id="roxo">Roxo</button>
-<button class='background' id="hide"> Esconder </button>
 
 </div>
 `
@@ -232,10 +231,16 @@ const id_roxo_ = document.querySelector("#roxo");
 // Inserindo o botão
 end.insertAdjacentHTML('beforebegin', `
     <style>
-        #remove {
+        #remove, #reset {
             color: white;
-            background-color: darkred;
-            font-size: 0.8rem;
+            font-size: 1.2rem;
+            border-radius: 6px;
+        }
+        #remove{
+            background: red;
+        }
+        #reset{
+            background: royalblue;
         }
     </style>
     <button id="remove" onclick="
@@ -255,10 +260,33 @@ end.insertAdjacentHTML('beforebegin', `
         document.querySelector('#link_tradutor').style.display = 'none';
         document.querySelector('#lichess').style.display = 'none';
         document.querySelector('#Github').style.display = 'none';
-
-        alert('Recarregue a pagina (F5) para que voltem a aparecer');
     })();
-">Retirar botões</button>
+
+">Remover</button>
+
+
+
+    <button id="reset" onclick="
+    (function() {
+        // Ocultando os elementos individualmente
+        document.querySelector('#padrao').style.display = 'inline';
+        document.querySelector('#red').style.display = 'inline';
+        document.querySelector('#blue').style.display = 'inline';
+        document.querySelector('#rosa').style.display = 'inline';
+        document.querySelector('#verde').style.display = 'inline';
+        document.querySelector('#roxo').style.display = 'inline';
+        document.querySelector('#sigaa').style.display = 'inline';
+        document.querySelector('#email_a').style.display = 'inline';
+        document.querySelector('#link_chat').style.display = 'inline';
+        document.querySelector('#documentos').style.display = 'inline';
+        document.querySelector('#Google_AI_Studio').style.display = 'inline';
+        document.querySelector('#link_tradutor').style.display = 'inline';
+        document.querySelector('#lichess').style.display = 'inline';
+        document.querySelector('#Github').style.display = 'inline';
+    })();
+
+">Resetar</button>
+
 
     </script>
 `);

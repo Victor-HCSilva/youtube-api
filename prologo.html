@@ -1,0 +1,68 @@
+
+<!doctype html>
+<html lang="en">
+  </head>
+    <style>
+        .hide{
+            display: none;
+        }
+        .inline{
+            display: inline-block;
+        }
+    </style>
+  <body>
+    <h1>Hello, world!</h1>
+ <button id="btn1">
+        ola Mundo - 1
+    </button>
+    <button id="btn2">
+        ola Mundo - 2
+    </button >
+    <button id="btn3">
+        ola Mundo - 3
+    </button>
+     <button id="hide">
+        Esconder
+    </button>
+
+    <button id="inline">
+        Ver
+    </button>
+
+
+
+
+
+
+    <script>
+        const btn1 = document.querySelector("#btn1");
+        const btn2 = document.querySelector("#btn2");
+        const btn3 = document.querySelector("#btn3");
+        const btn_hide = document.querySelector("#hide");
+        const btn_inline = document.querySelector("#inline");
+        const buttons = [btn1, btn2, btn3]; 
+        
+      
+
+        btn_inline.addEventListener("click", (buttons) => {
+             for(let i = 0; i < buttons.length; i++){
+
+                buttons[i].removeAttribute("class");
+                buttons[i].setAttribute("class", "inline");
+            }
+
+        })
+        btn_hide.addEventListener("click", () => {   
+            for(let i = 0; i < buttons.length; i++){
+                
+                buttons[i].removeAttribute("class");
+                buttons[i].setAttribute("class", "hide");
+            }
+        });
+
+    </script>
+
+  </body>
+</html>
+
+
