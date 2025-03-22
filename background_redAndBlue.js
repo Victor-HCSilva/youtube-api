@@ -22,7 +22,12 @@ logo_youtube.style.display = "None"//Retirando o logo do you tube, para substitu
 posicao_nome.style.display = "none"//Retirando a palavra "BR"
 imagem_temporaria.style.display = "none"//Retirando...
 
-posicao_nome.insertAdjacentHTML("afterend","<nome style='display: block; margin-top: 20px'>zVAZIO...</nome>")
+posicao_nome.insertAdjacentHTML("afterend",`
+    <nome 
+    style='color: rgb(0,150,200);
+    display: block;
+    margin-top: 20px'>
+    </nome>`)
 
 
 // ATALHO / IMAGEM DO LOGO LICHES
@@ -37,11 +42,11 @@ document.querySelector("#logo > div")
 image_position_logo.insertAdjacentHTML('beforeend', 
     `
     <style>
-
-#image_position{
-    border-radius: 100%;
-    margin-top: 20px;
-    <img id="image_position" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-8vg2DPED21dOJr95BoC4pxVVXaQJx6M-tA&s" height="60" width="60">
+    #image_position{
+        border-radius: 100%;
+        margin-top: 20px;
+    }
+    <img id= 'image_position' src="https://e7.pngegg.com/pngimages/64/231/png-clipart-rainbow-animated-illustration-rainbow-drawing-roygbiv-rainbow-s-color-cartoon.png" width="60">
     `
     )
     
@@ -50,10 +55,6 @@ position_red.insertAdjacentHTML('beforebegin',
 
 `
 <style>
-
-
-@media (min-width: 1200px) {
-
     .link{
         background-color: rgb(0,100,200);
         color:white;
@@ -79,7 +80,6 @@ position_red.insertAdjacentHTML('beforebegin',
         transition:1s;
         background-color:rgb(0,100,200);
     }
-}
 
 </style>
 <div id='my_style'>
@@ -91,7 +91,7 @@ position_red.insertAdjacentHTML('beforebegin',
 
 <a class='link'  id="link_chat" href="https://chatgpt.com/" target="_blank">Chat-GPT</a>
 
-<a class='link'  id="documentos" href="https://docs.google.com/document/u/0/" target="_blank">Docs. Google</a>
+<a class='link'  id="documentos"  href="https://docs.google.com/document/u/0/" target="_blank">Docs. Google</a>
 
 <a class='link'id="Google_AI_Studio"  title="Google_AI_Studio" href="https://aistudio.google.com/app/prompts/new_chat?pli=1" target="_blank">AI Studio</a>
 
@@ -140,7 +140,6 @@ function mudarParaVermelho(){
         // Exemplo: alterar o fundo de cada div para amarelo
         div.style.backgroundImage = background_red;
       });
-    alert('Red Mode Actived')
 }
 function mudarParaPadrao(){
     let background_default = "url('https://e1.pxfuel.com/desktop-wallpaper/847/615/desktop-wallpaper-plain-black-1920x1080-plain-black.jpg')";
@@ -148,7 +147,6 @@ function mudarParaPadrao(){
         // Exemplo: alterar o fundo de cada div para amarelo
         div.style.backgroundImage = background_default;
       });
-    alert('...Clean...')
 }
 function mudarParaAzul(){
     let background_blue = "url('https://i.pinimg.com/236x/d1/45/d4/d145d45cf468df92ea36943b4c3e2bbd.jpg')";
@@ -157,7 +155,6 @@ function mudarParaAzul(){
         // Exemplo: alterar o fundo de cada div para amarelo
         div.style.backgroundImage = background_blue;
       });
-    alert('Background Blue')
 }
 function mudarParaRosa(){
     let background_pink = "url('https://i.pinimg.com/236x/1d/c5/17/1dc5175baced150120e8e7f28ae5dd2a.jpg')"
@@ -165,7 +162,6 @@ function mudarParaRosa(){
         // Exemplo: alterar o fundo de cada div para amarelo
         div.style.backgroundImage = background_pink;
       });   
-    alert('Background Rosa ')
 }
 
 function mudarParaVerde(){
@@ -174,7 +170,6 @@ function mudarParaVerde(){
         // Exemplo: alterar o fundo de cada div para amarelo
         div.style.backgroundImage = backgorund_green;
       });
-    alert('Background Green')
 }
 //link para o background roxo: https://w.wallhaven.cc/full/l3/wallhaven-l3ovyy.png
 
@@ -184,7 +179,6 @@ function mudarParaRoxo(){
         // Exemplo: alterar o fundo de cada div para amarelo
         div.style.backgroundImage = background_violet;
       });
-    alert('Background Violet')
 }
 
 const padraoId = document.querySelector("#padrao");
@@ -239,8 +233,16 @@ end.insertAdjacentHTML('beforebegin', `
         #remove{
             background: red;
         }
+        #remove:hover{
+            transition: 1s;
+            background: darkred;
+        }
         #reset{
             background: royalblue;
+        }
+        #reset:hover{
+            transition: 1s;
+            background: blue;
         }
     </style>
     <button id="remove" onclick="
