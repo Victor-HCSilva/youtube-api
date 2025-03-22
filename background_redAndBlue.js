@@ -105,9 +105,9 @@ position_red.insertAdjacentHTML('beforebegin',
 <br>
 
 
-<button class='background' id="padrao">Clear</button>
-<button class='background' id="red">Red</button>
-<button class='background' id="blue">Blue</button>
+<button class='background' id="padrao">Preto</button>
+<button class='background' id="red">Vermelho</button>
+<button class='background' id="blue">Azul</button>
 <button class='background' id="rosa">Rosa</button>
 <button class='background' id="verde">Verde</button>
 <button class='background' id="roxo">Roxo</button>
@@ -285,6 +285,7 @@ end.insertAdjacentHTML('beforebegin', `
         document.querySelector('#link_tradutor').style.display = 'inline';
         document.querySelector('#lichess').style.display = 'inline';
         document.querySelector('#Github').style.display = 'inline';
+
     })();
 
 ">Resetar</button>
